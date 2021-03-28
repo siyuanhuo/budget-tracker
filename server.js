@@ -27,3 +27,5 @@ app.use(require("./routes/api.js"));
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+// mongodb+srv://workout_tracker:george93@cluster0.bnqzg.mongodb.net/budget_db?retryWrites=true&w=majority
