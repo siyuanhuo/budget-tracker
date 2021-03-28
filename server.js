@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://workout_tracker:george93@cluster0.bnqzg.mongodb.net/budget_db?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
@@ -28,4 +28,6 @@ app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
 
-// mongodb+srv://workout_tracker:george93@cluster0.bnqzg.mongodb.net/budget_db?retryWrites=true&w=majority
+// 
+
+// mongodb://localhost/budget
